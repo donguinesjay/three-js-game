@@ -1,6 +1,7 @@
 <html>
 <head>
-    <title>threejs - models</title>
+    <title>MCCE System</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
 
     <style>
       body{
@@ -10,10 +11,9 @@
     </style>
 </head>
 <body>
-
     <canvas id="myCanvas"></canvas>
 
-    <script src="js/three.js"></script>
+    <script src="assets/js/three.js"></script>
 
     <script>
     var renderer,
@@ -41,7 +41,7 @@
     
     var loader = new THREE.JSONLoader();
     // loader.load('monkey.json', handle_load);
-    loader.load('models/helmets/motocross-offroad/some.js', handle_load);
+    loader.load('assets/models/helmets/motocross-offroad/some.js', handle_load);
     var mesh;
     var mixer;
     function handle_load(geometry, materials) {
